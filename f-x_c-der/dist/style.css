@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital@1&display=swap');
+
+body{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  max-width:100vw;
+}
+
+#navbar{
+  display:flex;
+  justify-content: flex-end;
+  align-items:center;
+  height:10vh;
+  background-color:#101519;
+  padding:10px;
+  margin-bottom:0
+}
+
+
+#navbar li{
+  list-style:none;
+  padding:20px;
+  margin:20px 0;
+}
+
+#navbar a{
+  font-family: 'Kaushan Script', cursive;
+  text-decoration:none;
+  font-size:20px;
+  font-weight:900;
+  color:#18F260;
+  padding:10px 20px;
+}
+
+#navbar a:hover{
+  border: 1px solid #18F260;
+  border-radius:5px;
+}
+
+#navbar a:visited{
+  color:#F8F6F2;
+}
+
+@media (min-width:700px){
+  #navbar{
+  display:flex;
+  justify-content: space-evenly;
+}
+}
+
+#welcome-section{
+  width:100%;
+  height:90vh;
+  background: linear-gradient(45deg, #202A32, #101418);
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;  
+}
+
+#welcome-section h1{
+  color:#18F260;
+  font-size:3em;
+  margin-bottom:0;
+  margin-top:0;
+  font-family: 'Kaushan Script', cursive;
+}
+
+#welcome-section p{
+  color:#B6C2CE;
+  font-size:1.1em;
+}
+
+#projects{
+  background-color:#29333D;
+  text-align:center;
+  padding: 3em 0;
+}
+
+#projects h2{
+  margin:0;
+  padding:30px;
+  padding-top:0;
+  color: #B6C2CE;
+  font-size:2em;
+}
+
+.projects-grid{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    width:100%;
+}
+
+.project-group{
+  margin:0;
+  margin-bottom:70px;
+  background-color:#101418;
+  padding-bottom:20px; 
+  border-radius:3px;
+  box-shadow: 5px 7px 20px rgba(16, 20, 24, 0.91);
+}
+
+
+@media (min-width: 1300px) {
+  .projects-grid{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+    width:100%;
+  }
+  .project-group{
+  margin-bottom:30px;
+}
+}
+
+.code{
+  color:#101418;
+  transition:color 0.3s ease-out;
+}
+
+.project-group:hover .code{
+  color:#18F260;
+}
+
+.project-group a{
+  text-decoration:none;
+}
+
+.project-group p, .show{
+  font-size: 1.3em;
+  color:#B6C2CE;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.show{
+  background-color:#101418;
+  padding:10px;
+  width:130px;
+  margin:5px auto;
+  border-radius:3px;
+  transition: background 0.3s ease-out;
+}
+
+.show:hover{
+  color:#101418;
+  background:#18F260;
+}
+
+.show i{
+  margin-left:5px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.show:hover i{
+  transform: translateX(3px);
+}
+
+#contact{
+  background:#202A32;
+  height:70vh;
+  display:flex;
+  flex-direction:column;
+  justify-content: center; 
+  align-items:center;
+  text-align:center;
+}
+
+
+#contact h2{
+  margin-top:-150px;
+  margin-bottom:30px;
+  padding:10px 0;
+  font-size:4em;
+  letter-spacing:5px;
+  word-spacing:10px;
+  color:#B6C2CE;
+}
+
+.contact-icons a{
+  display:inline-block;
+  text-decoration:none;
+  padding:0 3em;
+  font-size:1.3em;
+  color:#B6C2CE;
+  transition: transform 0.3s ease-out;
+}
+
+
+.contact-icons a:hover{
+  transform:translateY(15px);
+}
+
+@media (max-width: 600px){
+  #contact h2{
+  font-size:2.5em;
+}
+  
+  .contact-icons a{
+  padding:0 2em;
+  font-size:1.2em;
+}
+}
+
+
+.contact-icons{
+  display:flex;
+  justify-content:center;
+  width:100%;
+  max-width:900px;
+}
+
+
+footer{
+  text-align:center;
+  background:#101519;
+  color:#18F260;
+  font-family: 'Kaushan Script', cursive;
+  height:10vh;
+  margin:0;
+  padding:10px;
+  font-size:1.2em;
+}
